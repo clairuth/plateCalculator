@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barbell Weight Calculator"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/totalWeightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter desired total weight"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/poundsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pounds"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/kilogramsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kilograms"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/barbellLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+        
+        <LinearLayout
+            android:id="@+id/leftWeightsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="10dp"
+            android:background="#000000"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+</LinearLayout>
+
